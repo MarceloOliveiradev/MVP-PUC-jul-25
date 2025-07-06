@@ -12,6 +12,8 @@ Este projeto é um MVP de uma aplicação inteligente capaz de prever a presenç
 
 │ │ ├── requirements.txt # Dependências do backend
 
+│ │ ├── test_model.py # Teste automatizado com PyTest
+
 │ ├── frontend/
 
 │ │ ├── index.html # Interface web para entrada de dados
@@ -31,10 +33,6 @@ Este projeto é um MVP de uma aplicação inteligente capaz de prever a presenç
 ├── notebook/
 
 │ └── heart_disease_classification.ipynb # Treinamento e exportação do modelo
-
-│
-
-├── test_model.py # Teste automatizado com PyTest
 
 ├── README.md # Este arquivo
 
