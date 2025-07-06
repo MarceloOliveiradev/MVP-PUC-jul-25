@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Previsão de Doença Cardíaca</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="themeToggle" title="Alternar tema"></button>
+
+    <h1>Classificador de Doença Cardíaca</h1>
+
+    <form id="predict-form">
+      <label
+        >Idade:
+        <input type="number" name="age" required />
+      </label>
+      <label
+        >Sexo (1 = Masculino, 0 = Feminino):
+        <input type="number" name="sex" required />
+      </label>
+      <label
+        >Tipo de dor no peito (cp):
+        <input type="number" name="cp" required />
+      </label>
+      <label
+        >Pressão arterial em repouso (trestbps):
+        <input type="number" name="trestbps" required />
+      </label>
+      <label
+        >Colesterol (chol):
+        <input type="number" name="chol" required />
+      </label>
+      <label
+        >Glicemia em jejum (fbs):
+        <input type="number" name="fbs" required />
+      </label>
+      <label
+        >ECG de repouso (restecg):
+        <input type="number" name="restecg" required />
+      </label>
+      <label
+        >Frequência máxima atingida (thalach):
+        <input type="number" name="thalach" required />
+      </label>
+      <label
+        >Angina induzida por esforço (exang):
+        <input type="number" name="exang" required />
+      </label>
+      <label
+        >Depressão (oldpeak):
+        <input type="number" name="oldpeak" step="0.1" required />
+      </label>
+      <label
+        >Inclinação ST (slope):
+        <input type="number" name="slope" required />
+      </label>
+      <label
+        >Número de vasos principais (ca):
+        <input type="number" name="ca" required />
+      </label>
+      <label
+        >Thal:
+        <input type="number" name="thal" required />
+      </label>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <p id="loading">⏳ Processando predição...</p>
+    <h2 id="result"></h2>
+
+    <script src="script.js"></script>
+  </body>
+</html>

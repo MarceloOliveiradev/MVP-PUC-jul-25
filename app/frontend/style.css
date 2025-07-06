@@ -1,0 +1,140 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tema claro */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #222;
+  padding: 2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Tema escuro */
+body.dark {
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+}
+
+/* Cabeçalho */
+h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Formulário */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+body.dark form {
+  background-color: #2a2a2a;
+}
+
+/* Campos */
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0077cc;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #005fa3;
+}
+
+/* Resultado */
+#result {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Carregando */
+#loading {
+  display: none;
+  text-align: center;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+/* Botão de alternância de tema */
+#themeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#themeToggle svg {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.4s ease;
+}
+
+/* Glow ao passar o mouse */
+#themeToggle:hover {
+  animation: pulse 0.6s ease-in-out;
+  box-shadow: 0 0 15px rgba(173, 216, 230, 0.7);
+}
+
+body.dark #themeToggle:hover {
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.7);
+}
+
+/* Gira suavemente ao alternar */
+body.dark #themeToggle svg {
+  transform: rotate(180deg);
+}
+
+/* Animação de pulsar */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
