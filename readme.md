@@ -5,21 +5,37 @@ Este projeto é um MVP de uma aplicação inteligente capaz de prever a presenç
 ## Estrutura
 
 ├── app/
+
 │ ├── backend/
+
 │ │ ├── main.py # API Flask que carrega e serve o modelo
+
 │ │ ├── requirements.txt # Dependências do backend
+
 │ ├── frontend/
+
 │ │ ├── index.html # Interface web para entrada de dados
+
 │ │ ├── style.css # Estilização e responsividade
+
 │ │ └── script.js # Interatividade e chamada à API
+
 │
+
 ├── model/
+
 │ └── model_heart_classification.pkl # Modelo final treinado e calibrado
+
 │
+
 ├── notebook/
+
 │ └── heart_disease_classification.ipynb # Treinamento e exportação do modelo
+
 │
+
 ├── test_model.py # Teste automatizado com PyTest
+
 ├── README.md # Este arquivo
 
 ## Sobre o Projeto
@@ -185,5 +201,7 @@ O projeto demonstra como aplicar machine learning para resolver um problema real
 - Reflexão sobre segurança de dados.
 
 Aluno: Marcelo Oliveira
+
 Curso: Pós-Graduação em Engenharia de Software – PUC-Rio
+
 Disciplina: Qualidade de Software, Segurança e Sistemas Inteligentes
